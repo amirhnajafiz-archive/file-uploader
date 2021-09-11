@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcc50ef9-ca9d-43a9-8939-a0bb09a420a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FileUploader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FileUploader.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileUploader/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileUploader/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileUploader/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileUploader/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileUploader/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileUploader/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileUploader/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/FileUploader/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -161,6 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631343225761</updated>
       <workItem from="1631343237928" duration="1217000" />
+      <workItem from="1631344540055" duration="310000" />
     </task>
     <servers />
   </component>
@@ -177,5 +178,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
