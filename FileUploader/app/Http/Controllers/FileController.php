@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\File;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -49,6 +50,12 @@ class FileController extends Controller
 
         if ($request->file('file')->getSize() < 5000000) {
             $disk->put($name, $request->file('file'));
+            File::query()->create([
+                'title' => $request->input('title'),
+                'description' => $request->input('description'),
+                'img' => null,
+                'link' => $name
+            ]);
             $status = 'OK';
         } else {
             $status = 'FAIL';
