@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Storage;
 
 class FileController extends Controller
 {
@@ -40,8 +41,21 @@ class FileController extends Controller
      */
     public function store(Request $request): JsonResponse
     {
+        $name = time() . $request->file('file')->getClientOriginalName();
+        $disk = Storage::build([
+            'driver' => 'public',
+            'root' => '/files'
+        ]);
+
+        if ($request->file('file')->getSize() < 5000000) {
+            $disk->put($name, $request->file('file'));
+            $status = 'OK';
+        } else {
+            $status = 'FAIL';
+        }
+
         return \response()->json([
-            'status' => 'OK'
+            'status' => $status
         ]);
     }
 
