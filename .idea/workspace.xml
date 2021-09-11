@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcc50ef9-ca9d-43a9-8939-a0bb09a420a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FileUploader/resources/js/components/NameForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileUploader/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileUploader/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileUploader/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileUploader/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileUploader/resources/js/components/Example.js" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/resources/js/components/Example.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileUploader/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileUploader/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +17,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/FileUploader/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -158,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631343225761</updated>
       <workItem from="1631343237928" duration="1217000" />
-      <workItem from="1631344540055" duration="2272000" />
+      <workItem from="1631344540055" duration="3111000" />
     </task>
     <servers />
   </component>

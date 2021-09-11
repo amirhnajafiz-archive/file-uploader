@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import NameForm from './NameForm';
 
 function Example() {
     return (
@@ -10,6 +11,17 @@ function Example() {
                         <div className="card-header">Example Component</div>
 
                         <div className="card-body">I'm an example component!</div>
+                    </div>
+                </div>
+            </div>
+            <div className="row justify-content-center mt-2">
+                <div className="col-md-8">
+                    <div className="card">
+                        <div className="card-header">File upload</div>
+
+                        <div className="card-body">
+                            <NameForm />
+                        </div>
                     </div>
                 </div>
             </div>
