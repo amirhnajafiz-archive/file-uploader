@@ -4,6 +4,7 @@
     <list default="true" id="fcc50ef9-ca9d-43a9-8939-a0bb09a420a6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileUploader/app/Http/Controllers/FileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/app/Http/Controllers/FileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileUploader/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/FileUploader/config/filesystems.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +165,9 @@
       <updated>1631343225761</updated>
       <workItem from="1631343237928" duration="1217000" />
       <workItem from="1631344540055" duration="4973000" />
-      <workItem from="1631351092037" duration="331000" />
+      <workItem from="1631351092037" duration="747000" />
+      <workItem from="1631367436896" duration="32000" />
+      <workItem from="1631512213274" duration="1981000" />
     </task>
     <servers />
   </component>
