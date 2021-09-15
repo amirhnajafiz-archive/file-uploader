@@ -111,11 +111,15 @@ class FileController extends Controller
      * Remove the specified resource from storage.
      *
      * @param int $id
-     * @return Response
+     * @return JsonResponse|Response
      */
     public function destroy($id)
     {
-        //
+        File::query()->findOrFail($id)->delete();
+        return \response()->json([
+            'STATUS' => 'OK',
+            'FILE' => 'DELETE'
+        ]);
     }
 
     /**
@@ -123,9 +127,25 @@ class FileController extends Controller
      *
      * @param Request $request
      * @param $id
+     * @return JsonResponse
      */
-    public function force(Request $request, $id)
+    public function force(Request $request, $id): JsonResponse
     {
-        //
+        $file = File::onlyTrashed()->findOrFail($id);
+        if ($request->has('_token')) {
+            if ($request->get('_token') == '2298') {
+                $path = $file->path;
+                Storage::disk('public')->delete('/files/' . $path);
+                $status = 'OK';
+            } else {
+                $status = 'WRONG_TOKEN';
+            }
+        } else {
+            $status = 'NO_TOKEN';
+        }
+
+        return \response()->json([
+            'RESPONSE' => $status
+        ]);
     }
 }
