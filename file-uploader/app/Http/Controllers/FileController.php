@@ -9,6 +9,8 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+use Symfony\Component\HttpFoundation\StreamedResponse;
 
 class FileController extends Controller
 {
@@ -72,20 +74,23 @@ class FileController extends Controller
      * Display the specified resource.
      *
      * @param int $id
-     * @return Response
+     * @return BinaryFileResponse|StreamedResponse
      */
     public function show($id)
     {
-        //
+        $file = File::query()->findOrFail($id);
+        $path = $file->path;
+
+        return Storage::disk('public')->download('/files/' . $path);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
      * @param int $id
-     * @return Response
+     * @return BinaryFileResponse
      */
-    public function edit($id)
+    public function edit($id): BinaryFileResponse
     {
         //
     }
