@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreFileRequest;
 use App\Models\File;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Storage;
 
 class FileController extends Controller
 {
@@ -43,12 +45,27 @@ class FileController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param Request $request
-     * @return Response
+     * @param StoreFileRequest $request
+     * @return JsonResponse|Response
      */
-    public function store(Request $request)
+    public function store(StoreFileRequest $request)
     {
-        //
+        $validated = $request->validated();
+
+        $name = time() . "_" . $request->file('file')->getClientOriginalName();
+
+        Storage::disk('public')->putFileAs('files/', $request->file('file'), $name);
+
+        $file = File::query()->create([
+            'title' => $validated['title'],
+            'path' => $name
+        ]);
+
+        return \response()->json([
+            'STATUS' => 'OK',
+            'ID' => $file->id,
+            'CREATED' => 'true'
+        ]);
     }
 
     /**
