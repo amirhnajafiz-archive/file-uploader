@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::apiResource('files', \App\Http\Controllers\FileController::class);
 
-Route::delete('files/force/{id}', [\App\Http\Controllers\FileController::class, 'force'])
+Route::delete('files/force/{file}', [\App\Http\Controllers\FileController::class, 'force'])
     ->name('files.force');
